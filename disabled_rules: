@@ -1,0 +1,86 @@
+disabled_rules:
+- trailing_whitespace
+- nesting
+
+excluded:
+- Pods
+- vendor
+
+# rule identifiers to opt in
+opt_in_rules:
+  - closure_spacing
+  - force_unwrapping
+  - missing_docs
+  - empty_count
+  - first_where
+  - closure_end_indentation
+  - explicit_init
+  - implicit_return
+  - number_separator
+  - implicitly_unwrapped_optional
+
+# special configuration for rules
+line_length:
+  warning: 150
+  error: 200
+  ignores_urls: true
+  ignores_function_declarations: false
+  ignores_comments: false
+
+disabled_rules:
+- trailing_whitespace
+- nesting
+file_length:
+  warning: 200
+  error: 300
+
+identifier_name:
+  excluded:
+    - i
+    - j
+    - k
+    - q
+    - id
+    - no
+
+function_parameter_count:
+  warning: 5
+  error: 8
+
+large_tuple:
+  warning: 3
+  error: 3
+
+function_body_length:
+  warning: 20
+  error: 30
+
+cyclomatic_complexity:
+  warning: 11
+  error: 12
+  ignores_case_statements: true
+
+number_separator:
+  minimum_length: 0
+
+colon:
+  flexible_right_spacing: false
+  apply_to_dictionaries: true
+
+implicitly_unwrapped_optional:
+  mode: allExceptIBOutlets
+
+identifier_name:
+  excluded:
+    - i
+    - j
+    - k
+    - q
+    - id
+    - no
+    - no
+
+type_name:
+  excluded:
+    - R
+    - UI
